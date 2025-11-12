@@ -12,7 +12,7 @@
   - ![Training Curves](plots/training_curves.png)
 
 - Final evaluation video (MP4; click thumbnail to play on GitHub):
-  - ![Final Evaluation GIF](videos/walker_final.gif)
+  - ![Final Evaluation GIF](videos/walker_final_BipedalWalker-v3_1762738355.gif)
 
 
 
