@@ -14,25 +14,12 @@
 - Final evaluation video (MP4; click thumbnail to play on GitHub):
   - [![Final Evaluation Video](videos/walker_final_BipedalWalker-v3_1762738355_thumb.png)](videos/walker_final_BipedalWalker-v3_1762738355.mp4)
 
-**Visualizations**
-- Extra dependency: `matplotlib` for plotting.
-- During training, metrics are logged per update to `plots/metrics_walker.csv`.
-- After training, plots are saved to `plots/`:
-  - `training_curves.png`: losses, entropy, and FPS across updates.
-  - `eval_returns.png`: evaluation average return over updates (sparse points).
 
 **Files**
 - `walker.py`: Thin entrypoint that calls `walker_core.train()`.
 - `walker_core.py`: PPO implementation, environment wrappers, evaluation, checkpointing, and final video export.
   - Also logs metrics to CSV and calls the plotting helper in `viz.py` at the end of training.
 
-**Outputs**
-- Checkpoints: `checkpoints_walker/ppo_BipedalWalker-v3_updXXXX.pt`.
-- Final video: `videos/walker_final_BipedalWalker-v3_<timestamp>.mp4`.
-
-**Configuration**
-- Edit constants at the top of `walker_core.py` (e.g., `NUM_ENVS`, `ROLLOUT_STEPS`, `TOTAL_TIMESTEPS`, `LR`, `EVAL_EVERY`, `SAVE_EVERY`).
-- Video control: `SAVE_FINAL_VIDEO` and `FINAL_VIDEO_EPISODES` in `walker_core.py`.
 
 **Training Tricks (What Makes It Work)**
 - Vectorized envs: Uses `SyncVectorEnv` with `NUM_ENVS=8` to improve sample throughput while keeping debugging simple.
