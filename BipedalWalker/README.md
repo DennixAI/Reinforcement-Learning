@@ -8,11 +8,11 @@
 - Checkpoints write to `checkpoints_walker/`. Final evaluation video writes to `videos/`.
 
 **Results Preview**
-- Training curves and eval returns (render directly on GitHub):
+- Training curves (render directly on GitHub):
   - ![Training Curves](plots/training_curves.png)
- 
-- Final evaluation video (GitHub-friendly GIF):
-  - ![Final Evaluation (GIF)](videos/walker_final_BipedalWalker-v3_1762738355.gif)
+
+- Final evaluation video (MP4; click thumbnail to play on GitHub):
+  - [![Final Evaluation Video](videos/walker_final_BipedalWalker-v3_1762738355_thumb.png)](videos/walker_final_BipedalWalker-v3_1762738355.mp4)
 
 **Visualizations**
 - Extra dependency: `matplotlib` for plotting.
