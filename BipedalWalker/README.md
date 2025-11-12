@@ -10,7 +10,7 @@
 **Results Preview**
 - Training curves and eval returns (render directly on GitHub):
   - ![Training Curves](plots/training_curves.png)
-  - ![Evaluation Returns](plots/eval_returns.png)
+ 
 - Final evaluation video (GitHub-friendly GIF):
   - ![Final Evaluation (GIF)](videos/walker_final_BipedalWalker-v3_1762738355.gif)
 
